@@ -142,6 +142,11 @@ class Game:
 
         # Draw score and lives
         pyxel.text(5, 5, f"SCORE: {self.score}", 7)
+        pyxel.text(30, 152, "Tup to Switch", 13)
+        if self.round > 5:
+            pyxel.text(5, 12, "LEVEL: MAX", 10)
+        else:
+            pyxel.text(5, 12, f"LEVEL: {self.round}", 7)
 
         for i in range(INITIAL_LIVES):
             x = WINDOW_WIDTH - 10 * (i + 1)
