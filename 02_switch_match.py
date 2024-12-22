@@ -129,7 +129,7 @@ class Game:
         if self.is_game_over:
             pyxel.text(40, 70, "GAME OVER", 8)
             pyxel.text(30, 90, "TAP TO RESTART", 7)
-            pyxel.text(40, 110, f"SCORE: {self.score}", 7)
+            pyxel.text(40, 110, f"02:SCORE: {self.score}", 7)
             return
 
         # Draw the bottom rectangle
